@@ -28,7 +28,7 @@ const options={
 
 export default function main() {
     const {isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: API_KEY,
+      googleMapsApiKey: process.env.API_KEY,
       libraries,
     
     });
