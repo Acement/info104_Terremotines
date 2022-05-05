@@ -25,9 +25,10 @@ const MainLayout = ({ children, pageId }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Pagina principal" />
       </Head>
-
-      <Button value="rotated text" id="rotate" ref={btnRef} colorScheme="red" onClick={onOpen}>
-          |||
+      <header className="menu"> </header>
+      
+      <Button ref={btnRef} colorScheme="red" onClick={onOpen}>
+          Menu
         </Button>
       <main>{children}</main>
       <Drawer

@@ -25,6 +25,7 @@ const MainLayout = ({ children, pageId }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Pagina principal" />
       </Head>
+      <header className="menu"> </header>
 
       <Button value="rotated text" id="rotate" ref={btnRef} colorScheme="red" onClick={onOpen}>
           |||

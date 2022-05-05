@@ -25,10 +25,11 @@ const MainLayout = ({ children, pageId }) => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Pagina principal" />
       </Head>
-
-      <Button value="rotated text" id="rotate" ref={btnRef} colorScheme="red" onClick={onOpen}>
-          |||
+      <header className="menu">
+        <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+          Menu
         </Button>
+      </header>
       <main>{children}</main>
       <Drawer
         isOpen={isOpen}
@@ -38,7 +39,7 @@ const MainLayout = ({ children, pageId }) => {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton />
+          <DrawerCloseButton placement="left" />
           <DrawerHeader>Menu</DrawerHeader>
 
           <DrawerBody>
