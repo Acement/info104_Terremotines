@@ -27,7 +27,7 @@ const MainLayout = ({ children, pageId }) => {
       </Head>
       <header className="menu">
         <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-          Menu
+          Open
         </Button>
       </header>
       <main>{children}</main>

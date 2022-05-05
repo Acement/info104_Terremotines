@@ -1,21 +1,16 @@
 
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
+import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import{
   GoogleMap,
   useLoadScript,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import {formatRelative} from "date-fns";
-
 import MStyles from "./MStyles";
-const mapContainerStyle ={
-  width: "100vw",
-  height: "100vh",
 
-};
-const libraries = ["places"];
+const lib = ["places"];
 const centro ={
   lat: 0.000000,
   lng: 0.000000,
@@ -27,8 +22,8 @@ const options={
 
 export default function main() {
     const {isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: process.env.API_KEY,
-      libraries,
+      GoogleMapApikey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+      lib,
     
     });
 
@@ -38,13 +33,7 @@ export default function main() {
 
   return (
     <MainLayout pageId="main">
-      <h1>Terremotos </h1>
-      <GoogleMap 
-      mapContainerStyle={mapContainerStyle} 
-      zoom= {3}
-      center={centro}
-      options={options}
-      ></GoogleMap>
+      <GoogleMap mapContainerStyle={mapContainerStyle} zoom= {3}></GoogleMap>
 
     </MainLayout>
   );

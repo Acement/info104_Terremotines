@@ -28,8 +28,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: fit-content;
-  max-width: 2700px;
+  max-width: 400px;
 }
 
 footer {

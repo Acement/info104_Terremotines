@@ -1,4 +1,5 @@
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc&callback=initMap"></script>
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
 import{
@@ -7,10 +8,9 @@ import{
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import {formatRelative} from "date-fns";
-
 import MStyles from "./MStyles";
-const mapContainerStyle ={
+
+const MapContainerStyle ={
   width: "100vw",
   height: "100vh",
 
@@ -27,7 +27,7 @@ const options={
 
 export default function main() {
     const {isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: process.env.API_KEY,
+      googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
       libraries,
     
     });
@@ -39,11 +39,9 @@ export default function main() {
   return (
     <MainLayout pageId="main">
       <h1>Terremotos </h1>
-      <GoogleMap 
-      mapContainerStyle={mapContainerStyle} 
+      <GoogleMap mapContainerStyle={MapContainerStyle} 
       zoom= {3}
       center={centro}
-      options={options}
       ></GoogleMap>
 
     </MainLayout>

@@ -22,14 +22,13 @@ body {
 }
 
 main {
-  padding: 0;
+  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: fit-content;
-  max-width: 2700px;
+  max-width: 700px;
 }
 
 footer {
@@ -94,7 +93,7 @@ a {
 .todo-item {
   display: flex;
   padding: 10px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #e0e0e0;
 }
 .todo-item-title {
   flex: 10;
@@ -188,14 +187,4 @@ code {
     width: 100%;
     flex-direction: column;
   }
-}
-
-h1{
-  position: absolute;
-  top:1rem;
-  left:1rem;
-  color:#333333;
-  z-index: 10;
-  margin: 0;
-  padding: 0;
 }
