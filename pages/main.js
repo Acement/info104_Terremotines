@@ -30,8 +30,8 @@ export default function main() {
     const {isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: API_KEY,
       libraries,
-    
     });
+  const [markers, setMarkers] = react.useState([]);
 
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
@@ -39,7 +39,8 @@ export default function main() {
 
   return (
     <MainLayout pageId="main">
-      <h1>Terremotos </h1>
+      <h1 
+      >Terremotos </h1>
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}
