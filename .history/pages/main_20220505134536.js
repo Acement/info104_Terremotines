@@ -11,10 +11,11 @@ import {formatRelative} from "date-fns";
 const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
 
 import MStyles from "./MStyles";
+import { createSecureContext } from "tls";
+import { Container } from "@chakra-ui/react";
 const mapContainerStyle ={
   width: "100vw",
   height: "100vh",
-
 };
 const libraries = ["places"];
 const centro ={
@@ -31,7 +32,7 @@ export default function main() {
       googleMapsApiKey: API_KEY,
       libraries,
     });
-  //const [markers, setMarkers] = react.useState([]);
+  const [markers, setMarkers] = React.useState([]);
 
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
@@ -46,7 +47,8 @@ export default function main() {
       zoom= {3}
       center={centro}
       options={options}
-      ></GoogleMap>
+      >
+      </GoogleMap>
 
     </MainLayout>
   );
