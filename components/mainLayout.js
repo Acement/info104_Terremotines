@@ -5,6 +5,10 @@ import React, { useState } from "react";
 import {
   Button,
   Input,
+  Box,
+  FormLabel,
+  Select,
+  option,
   useDisclosure,
   Drawer,
   DrawerBody,
@@ -49,7 +53,6 @@ const MainLayout = ({ children, pageId }) => {
                 Mapa
               </a>
             </Link>
-
             <Link href="/tabla">
           <a
             className={pageId === "tabla" ? "currentPage" : ""}
@@ -57,6 +60,14 @@ const MainLayout = ({ children, pageId }) => {
             Tablas
           </a>
         </Link>
+        <Box>
+                <FormLabel htmlFor='owner'>Seleccione marcadores</FormLabel>
+                <Select id='owner' defaultValue='markerD'>
+                  <option value='markerD'>Más destructivos</option>
+                  <option value='markerI'>Mayor impacto</option>
+                  <option value='markerM'>Mayor Magnitud </option>
+                </Select>
+        </Box>
 
           </DrawerBody>
 
