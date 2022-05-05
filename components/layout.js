@@ -2,9 +2,23 @@ import Head from "next/head";
 import Link from "next/link";
 import ViewCount from "../components/viewCount";
 import React, { useState } from "react";
+import {
+  Button,
+  Input,
+  useDisclosure,
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
 
 const Layout = ({ children, pageId }) => {
   const [nViews, setViews] = useState(0);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef();
   function incrementViews() {
     //console.log(nViews);
     setViews(nViews + 1);
@@ -20,6 +34,9 @@ const Layout = ({ children, pageId }) => {
         <meta name="description" content="Ejemplo de sitio web con menú" />
       </Head>
       <header className="menu">
+        <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+          Open
+        </Button>
         <Link href="/page1">
           <a
             className={pageId === "page1" ? "currentPage" : ""}
@@ -58,6 +75,30 @@ const Layout = ({ children, pageId }) => {
         <ViewCount count={nViews} reset={resetViews} />
       </header>
       <main>{children}</main>
+
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerHeader>Create your account</DrawerHeader>
+
+          <DrawerBody>
+            <Input placeholder="Type here..." />
+          </DrawerBody>
+
+          <DrawerFooter>
+            <Button variant="outline" mr={3} onClick={onClose}>
+              Cancel
+            </Button>
+            <Button colorScheme="blue">Save</Button>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 };
