@@ -7,6 +7,7 @@ import{
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
+import {formatRelative} from "date-fns";
 const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
 
 import MStyles from "./MStyles";
@@ -31,7 +32,6 @@ export default function main() {
       libraries,
     });
   const [markers,setMarkers]= React.useState([]);
-  const [selected,setSelected]= React.useState(null);
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
 
@@ -57,23 +57,8 @@ export default function main() {
 
       >
       {markers.map((marker)=>(
-        <Marker 
-        key={marker.time.toISOString()} 
-        position={{lat: marker.lat, lng: marker.lng}} 
-        onClick={()=>{
-          setSelected(marker);
-        }}
-
-        />
+        <Marker key={marker.time.toISOString()} position={{lat: marker.lat, lng: marker.lng}} />
       ))} 
-      {selected ? (
-        <InfoWindow position={{lat: selected.lat, lng:selected.lng}} onCloseClick={()=>
-        {setSelected(null)}}>
-          <div>
-            <h2>Terremoto!</h2>
-          </div>
-      </InfoWindow>
-      ) : null}
       </GoogleMap>
 
     </MainLayout>

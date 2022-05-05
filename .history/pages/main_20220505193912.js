@@ -7,6 +7,7 @@ import{
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
+import {formatRelative} from "date-fns";
 const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
 
 import MStyles from "./MStyles";
@@ -66,14 +67,11 @@ export default function main() {
 
         />
       ))} 
-      {selected ? (
-        <InfoWindow position={{lat: selected.lat, lng:selected.lng}} onCloseClick={()=>
-        {setSelected(null)}}>
-          <div>
-            <h2>Terremoto!</h2>
-          </div>
-      </InfoWindow>
-      ) : null}
+      {selected ? (<InfoWindow>
+        <div>
+          <h2>Terremoto!</h2>
+        </div>
+      </InfoWindow>) : null}
       </GoogleMap>
 
     </MainLayout>

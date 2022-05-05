@@ -7,6 +7,7 @@ import{
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
+import {formatRelative} from "date-fns";
 const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
 
 import MStyles from "./MStyles";
