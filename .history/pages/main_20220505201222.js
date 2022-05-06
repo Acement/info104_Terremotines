@@ -59,6 +59,7 @@ export default function main() {
       }}
 
       >
+      for (let i= 0; i<)
       <Marker position={PruebaLatLng}> </Marker>
       {markers.map((marker)=>(
         <Marker 

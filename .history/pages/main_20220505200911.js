@@ -1,7 +1,6 @@
 
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
-import markersA from "../public/data/marcadores.json"
 import{
   GoogleMap,
   useLoadScript,

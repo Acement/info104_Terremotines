@@ -38,6 +38,22 @@ export default function main() {
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
 
+  const Mrks = [
+    ["Terremoto 1",-25.363,131.044],
+    ["Terremoto 2", 25.363,131.044],
+    ["Terremoto 3",-28.363,131.044],
+    ["Terremoto 4",-29.363,131.044],
+    ["Terremoto 5",-23.363,131.044],
+    ["Terremoto 6",-50.363,131.044],
+    ["Terremoto 7",-80.363,131.044],
+
+    
+  ];
+
+  for(let i= 0; i<Mrks.length; i++){
+    <marker position={{lat: Mrks[1], lng:Mrks[3]}}></marker>
+  }
+
 
   return (
     <MainLayout pageId="main">
@@ -59,7 +75,9 @@ export default function main() {
       }}
 
       >
-      <Marker position={PruebaLatLng}> </Marker>
+      
+
+      <Marker position={{lat:Mrks[1], lng: Mrks[2]}}> </Marker>
       {markers.map((marker)=>(
         <Marker 
         key={marker.time.toISOString()} 
@@ -79,6 +97,8 @@ export default function main() {
       </InfoWindow>
       ) : null}
       </GoogleMap>
+
+      
 
     </MainLayout>
   );
