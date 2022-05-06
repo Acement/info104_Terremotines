@@ -9,6 +9,7 @@ import{
 } from "@react-google-maps/api";
 const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
 
+
 import MStyles from "./MStyles";
 const mapContainerStyle ={
   width: "100vw",
@@ -26,12 +27,11 @@ const options={
 };
 
 export default function main() {
-
+    const [office, setOffice] = useState(google.maps.LatLngLiteral);
     const {isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: API_KEY,
       libraries,
     });
-  const PruebaLatLng = { lat: -25.363, lng: 131.044 };
   const [markers,setMarkers]= React.useState([]);
   const [selected,setSelected]= React.useState(null);
   if (loadError) return "error al cargar mapa";
@@ -58,7 +58,6 @@ export default function main() {
       }}
 
       >
-      <Marker position={PruebaLatLng}> </Marker>
       {markers.map((marker)=>(
         <Marker 
         key={marker.time.toISOString()} 
@@ -66,6 +65,8 @@ export default function main() {
         onClick={()=>{
           setSelected(marker);
         }}
+
+
 
         />
       ))} 

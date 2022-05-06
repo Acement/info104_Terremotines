@@ -26,12 +26,10 @@ const options={
 };
 
 export default function main() {
-
     const {isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: API_KEY,
       libraries,
     });
-  const PruebaLatLng = { lat: -25.363, lng: 131.044 };
   const [markers,setMarkers]= React.useState([]);
   const [selected,setSelected]= React.useState(null);
   if (loadError) return "error al cargar mapa";
@@ -58,7 +56,6 @@ export default function main() {
       }}
 
       >
-      <Marker position={PruebaLatLng}> </Marker>
       {markers.map((marker)=>(
         <Marker 
         key={marker.time.toISOString()} 

@@ -26,12 +26,10 @@ const options={
 };
 
 export default function main() {
-
     const {isLoaded, loadError } = useLoadScript({
       googleMapsApiKey: API_KEY,
       libraries,
     });
-  const PruebaLatLng = { lat: -25.363, lng: 131.044 };
   const [markers,setMarkers]= React.useState([]);
   const [selected,setSelected]= React.useState(null);
   if (loadError) return "error al cargar mapa";
@@ -47,26 +45,11 @@ export default function main() {
       zoom= {3}
       center={centro}
       options={options}
-      onClick={(event)=>{
-        setMarkers(current=>[...current,{
-          lat: event.latLng.lat(),
-          lng: event.latLng.lng(),
-          time : new Date(),
-          
-
-        }]);
-      }}
-
       >
-      <Marker position={PruebaLatLng}> </Marker>
       {markers.map((marker)=>(
         <Marker 
         key={marker.time.toISOString()} 
-        position={{lat: marker.lat, lng: marker.lng}} 
-        onClick={()=>{
-          setSelected(marker);
-        }}
-
+        position={{lat: -39.499998, lng: -39.499998 -74.499998}} 
         />
       ))} 
       {selected ? (
