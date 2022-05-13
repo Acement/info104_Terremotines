@@ -8,7 +8,8 @@ import{
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-const API_KEY= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc";
+
+
 
 import MStyles from "./MStyles";
 const mapContainerStyle ={
@@ -29,7 +30,7 @@ const options={
 export default function main() {
 
     const {isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: API_KEY,
+      googleMapsApiKey: process.env.NEXT_PUBLIC_MY_API_KEY,
       libraries,
     });
   const PruebaLatLng = { lat: -25.363, lng: 131.044 };
@@ -52,9 +53,6 @@ export default function main() {
         setMarkers(current=>[...current,{
           lat: event.latLng.lat(),
           lng: event.latLng.lng(),
-          time : new Date(),
-          
-
         }]);
       }}
 
