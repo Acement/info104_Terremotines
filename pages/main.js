@@ -60,7 +60,6 @@ export default function main() {
       <Marker position={PruebaLatLng}> </Marker>
       {markers.map((marker)=>(
         <Marker 
-        key={marker.time.toISOString()} 
         position={{lat: marker.lat, lng: marker.lng}} 
         onClick={()=>{
           setSelected(marker);
