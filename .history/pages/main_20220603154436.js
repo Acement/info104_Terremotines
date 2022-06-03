@@ -34,6 +34,7 @@ export default function main() {
 
   return (
     <MainLayout pageId="main">
+
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}

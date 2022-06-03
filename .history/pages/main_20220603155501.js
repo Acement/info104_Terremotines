@@ -6,7 +6,7 @@ import{
   GoogleMap,
   useLoadScript,
 } from "@react-google-maps/api";
-
+const k= "AIzaSyC6AkWYmepjFpXsxTkHKjCYRHWQTC9FWQc"
 import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
   width: "100vw",
@@ -25,7 +25,7 @@ const options={
 
 export default function main() {
     const {isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: process.env.NEXT_PUBLIC_MY_API_KEY,
+      googleMapsApiKey: k,
       libraries,
     });
   if (loadError) return "error al cargar mapa";
