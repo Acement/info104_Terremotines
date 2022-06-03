@@ -107,7 +107,7 @@
         },
         "geometry": {
           "type": "Point",
-          "coordinates": [36.29,73.239]
+          "coordinates": [-36.29,-73.239]
         }
       },
       {
