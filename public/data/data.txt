@@ -1,0 +1,52 @@
+const data = [
+  {
+    name: 'Terremoto de Shaanxi(China)',
+    victimas: 830000,
+    magnitud: 8.0,
+  },
+  {
+    name: 'Terremoto de Tangshan(China)',
+    victimas: 655000,
+    magnitud: 7.6,
+  },
+  {
+    name: 'Terremoto de Haiyuan(China)',
+    victimas: 273407,
+    magnitud: 8.2,
+  },
+  {
+    name: 'Terremoto de Antioch(Siria)',
+    victimas: 250000,
+    magnitud: 7.0,
+  },
+  {
+    name: 'Terremoto de Ganja(Azerbaiyan)',
+    victimas: 300000,
+    magnitud: 7.7,
+  },
+  {
+    name: 'Terremoto Oceano Indico',
+    victimas: 227898,
+    magnitud: 9.1,
+  },
+  {
+    name: 'Terremoto de Aleppo(Siria)',
+    victimas: 230000,
+    magnitud: 7.1,
+  },
+  {
+    name: 'Terremoto de Haiti',
+    victimas: 208000,
+    magnitud: 7.0,
+  },
+  {
+    name: 'Terremoto de Hongdong(China)',
+    victimas: 200000,
+    magnitud: 8.0,
+  },  
+  {
+    name: 'Terremoto de Damghan(Iran)',
+    victimas: 200000,
+    magnitud: 7.9,
+  },
+];
