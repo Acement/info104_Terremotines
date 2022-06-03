@@ -1,0 +1,129 @@
+{
+    "type": "TerremotoL",
+  
+    "Terremotos": [
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 960,
+          "NAME": "Terremoto de Tōhoku(Japón)",
+          "INFO":"Año:2011 ,Costo:$423.7 billones ;Victimas:19747 ,Magnitud:9.1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [38.32,147.37]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1219,
+          "NAME": "Terremoto de Gran Hanshin(Japón)",
+          "INFO":"Año:1995 ,Costo:$344.7 billones ;Victimas:5502 -  6434 ,Magnitud:6.9"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates":[34.58,135.03]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1157,
+          "NAME": "Terremoto de Sichuan(China)",
+          "INFO":"Año:2008 ,Costo:$179.7 billones ;Victimas:87587 ,Magnitud:8.0"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [31.021,103.367]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 9,
+          "NAME": "Terremoto de Northbridge(Estados Unidos)",
+          "INFO":"Año: 1994, Costo:$88.2 billones ,Victimas:57 ,Magnitud:6.7"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [34.21,-118.54]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1160,
+          "NAME": "Terremoto de Christchurch(Nueva Zelanda)",
+          "INFO":"Año:2011 ,Costo:$47.5 billones ,Victimas:185 ,Magnitud:6.3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-43.583,172.68]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1693,
+          "NAME": "Terremoto Oceano Indico",
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [3.316,95.854]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1717,
+          "NAME": "Terremoto de L’Aquila(Italia)",
+          "INFO":"Año:2009 ,Costo: $19 billones ,Victimas:308 ,Magnitud:5.8"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [42.3476,13.38]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 137,
+          "NAME": "Terremoto en el Norte de Italia",
+          "INFO":"Año: 2012,Costo: $18.1 billones ,Victimas: 27 ,Magnitud:6.1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [44.9,11.24]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1133,
+          "NAME": "Terremoto de Chile (Costa)",
+          "INFO":"Año:2010,Costo:$18 - $36 billones ;Victimas:525 ,Magnitud: 8.8"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [36.29,73.239]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 657,
+          "NAME": "Terremoto de Chūetsu(Japón)",
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1"
+  
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [37.3, 138.8]
+
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,127 @@
+{
+  "type": "TerremotoL",
+
+  "Terremotos": [
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 960,
+        "NAME": "Terremoto de Valdivia(Chile)",
+        "INFO":"Año:1960, Costo:??, Victimas:1,000 – 6,000, Magnitud:9.4–9.6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.24,-73.05]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1219,
+        "NAME": "Islas Aleutianas(Estados Unidos)",
+        "INFO":"Año:1585,Costo: ??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[52,-174]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1157,
+        "NAME": "Terremoto de Valparaíso(Chile)",
+        "INFO":"Año:1730, Costo: ??, Victimas: ??, Magnitud:9.1 – 9.3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-32.5, -71.5]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 9,
+        "NAME": "Terremoto de Alaska(Estados Unidos)",
+        "INFO":"Año:1964 ,Costo:$311 millones,Victimas: 131, Magnitud:9.2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [60.908, -147.339]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1160,
+        "NAME": "Terremoto Oceano Indico",
+        "INFO":"Año:2004, Costo:$31 billones ,Victimas: 227,898,Magnitud: 9.1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [3.316, 95.854]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1693,
+        "NAME": "Terremoto de Kamchatka(Rusia)",
+        "INFO":"Año:1737, Costo:??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.0 – 9.3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.5, 159.5]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1717,
+        "NAME": "Terremoto de Valdivia(Chile)",
+        "INFO":"Año:1837, Costo:?? , Victimas:12, Magnitud:8.8 – 9.5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.813, 73.245]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 137,
+        "NAME": "Terremoto de Tōhoku(Japón)",
+        "INFO":"Año:2011 ,Costo:$423.7 billones ;Victimas:19747 ,Magnitud:9.1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [38.32, 147.37]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 1133,
+        "NAME": "Terremoto de Sumatra",
+        "INFO":"Año:1833, Costo:??, Victimas:?? ,Magnitud:8.8 – 9.2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.5, 100.5]
+      }
+    },
+    {
+      "type": "Terremoto",
+      "Datos": {
+        "EQ_ID": 657,
+        "NAME": "Terremoto de Kamchatka(Rusia)",
+        "INFO":"Año:1841, Costo:??, Victimas:??, Magnitud:9.0"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [52.5, 159.5]
+      }
+    }
+  ]
+}

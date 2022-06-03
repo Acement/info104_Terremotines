@@ -1,0 +1,129 @@
+{
+    "type": "TerremotoL",
+  
+    "Terremotos": [
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 960,
+          "NAME": "Terremoto de Shaanxi(China)",
+          "INFO":"Año:1556, Costo:??, Victimas:830000(Estimacion), Magnitud:8.0"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [34.5,109.3]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1219,
+          "NAME": "Terremoto de Tangshan(China)",
+          "INFO":"Año:1976, Costo:, Victimas:655000(Estimacion), Magnitud:7.6"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates":[39.63,118.10]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1157,
+          "NAME": "Terremoto de Haiyuan(China)",
+          "INFO":"Año:1920, Costo:??, Victimas:258707 - 273407, Magnitud:8.2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [36.50,105.70]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 9,
+          "NAME": "Terremoto de Antioch(Siria)",
+          "INFO":"Año:526, Costo:??, Victimas:250000(Estimacion), Magnitud:7.0"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [36.23,36.12]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1160,
+          "NAME": "Terremoto de Ganja(Azerbaiyan)",
+          "INFO":"Año:1139, Costo:??, Victimas:230000 – 300000(Estimacion), Magnitud:7.7"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [40.3,46.2]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1693,
+          "NAME": "Terremoto Oceano Indico",
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [3.316,95.854]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1717,
+          "NAME": "Terremoto de Aleppo(Siria)",
+          "INFO":"Año:1138, Costo:??, Victimas:230000(Estimacion) , Magnitud:7.1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [36.216,37.166]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 137,
+          "NAME": "Terremoto de Haiti",
+          "INFO":"Año:2010, Costo:$7.8 – 8.5 billones, Victimas:100000 – 316000(Estimacion), Magnitud:7.0"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [18.46,-72.53]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1133,
+          "NAME": "Terremoto de Hongdong(China)",
+          "INFO":"Año:1303, Costo:??, Victimas:200000(Estimacion), Magnitud:8.0"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [36.3,111.7]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 657,
+          "NAME": "Terremoto de Damghan(Iran)",
+          "INFO":"Año:856, Costo:??, Victimas:200000(Estimacion), Magnitud:7.9"
+  
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [52.5, 159.5]
+
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,318 @@
+{
+  "type": "FeatureCollection",
+
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 960,
+        "FACILITYID": 28014,
+        "NAME": "Bearbrook Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.24,-73.05]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1219,
+        "FACILITYID": 28001,
+        "NAME": "Bob MacQuarrie Skateboard Park (SK8 Extreme Park)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":[38.32,147.37]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1157,
+        "FACILITYID": 28002,
+        "NAME": "Walter Baker Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.898610599532319, 45.295014379864874]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 9,
+        "FACILITYID": 28006,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.468561642270757, 45.23032561834377]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1160,
+        "FACILITYID": 28007,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.926651366520872, 45.260659774950561]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1693,
+        "FACILITYID": 28016,
+        "NAME": "Legacy Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.760933332842754, 45.345566668964558]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1717,
+        "FACILITYID": 28018,
+        "NAME": "Greenboro Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.625996131485707, 45.375401587496128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 137,
+        "FACILITYID": 28019,
+        "NAME": "Bridlewood Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.857009812435976, 45.290758029776626]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1133,
+        "FACILITYID": 28020,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.206087708136721, 45.470459866077654]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 657,
+        "FACILITYID": 28000,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.760235255689508, 45.280622216516925]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 653,
+        "FACILITYID": 28008,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.60118478829267, 45.147641950106689]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 812,
+        "FACILITYID": 35050,
+        "NAME": "Charlie Bowins Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.703622500360268, 45.408488357092367]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2457,
+        "FACILITYID": 35637,
+        "NAME": "Diamond Jubilee Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.609516309730921, 45.314086718258636]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 430,
+        "FACILITYID": 28005,
+        "NAME": "Blackburn Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.562796920677627, 45.429643413219814]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 989,
+        "FACILITYID": 28017,
+        "NAME": "Goulbourn Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.907108695123526, 45.26222860981953]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 1334,
+        "FACILITYID": 28011,
+        "NAME": "Constance Bay Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-76.09244957349965, 45.499050061534312]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 923,
+        "FACILITYID": 28013,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.695392300925718, 45.315355581248873]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 762,
+        "FACILITYID": 28004,
+        "NAME": "Trillium Park Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.601158413850058, 45.436441777242031]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 52,
+        "FACILITYID": 35120,
+        "NAME": "Lansdowne Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.681193500335723, 45.400372622455215]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2488,
+        "FACILITYID": 35815,
+        "NAME": "Greely Village Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.553065849890629, 45.265433081236672]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 330,
+        "FACILITYID": 28003,
+        "NAME": "Manotick Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.686746214582783, 45.22266136322127]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 693,
+        "FACILITYID": 28010,
+        "NAME": "Roving Skateboard Park Location"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.556978502821494, 45.261353985880973]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2544,
+        "FACILITYID": 35667,
+        "NAME": "Berrigan Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.747348794023239, 45.275696004260205]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2599,
+        "FACILITYID": 49251,
+        "NAME": "Eugène Martineau Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.632030968141081, 45.450696284941976]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2278,
+        "FACILITYID": 49211,
+        "NAME": "Vista Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.471003922143311, 45.450391044010431]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "EQ_ID": 2113,
+        "FACILITYID": 35299,
+        "NAME": "Innovation Skateboard Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.931122879767898, 45.34125624499935]
+      }
+    }
+  ]
+}
