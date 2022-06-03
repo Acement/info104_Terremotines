@@ -91,7 +91,7 @@
         "Datos": {
           "EQ_ID": 137,
           "NAME": "Terremoto en el Norte de Italia",
-          "INFO":"Año: 2012,Costo: $18.1 billones ,Victimas: 27 ,Magnitud:6.1"
+          "INFO":"Año: 2012, Costo: $18.1 billones, Victimas: 27, Magnitud:6.1"
         },
         "geometry": {
           "type": "Point",
