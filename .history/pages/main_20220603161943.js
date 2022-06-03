@@ -9,8 +9,8 @@ import{
 
 import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
-  width: "98vw",
-  height: "100vh",
+  width: "30vw",
+  height: "30vh",
 
 };
 const libraries = ["places"];
@@ -34,7 +34,6 @@ export default function main() {
 
   return (
     <MainLayout pageId="main">
-
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}

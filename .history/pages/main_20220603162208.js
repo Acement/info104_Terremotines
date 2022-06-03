@@ -9,7 +9,7 @@ import{
 
 import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
-  width: "98vw",
+  width: "90vw",
   height: "100vh",
 
 };

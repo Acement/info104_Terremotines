@@ -9,7 +9,7 @@ import{
 
 import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
-  width: "98vw",
+  width: "100vw",
   height: "100vh",
 
 };
@@ -34,13 +34,13 @@ export default function main() {
 
   return (
     <MainLayout pageId="main">
-
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}
       center={centro}
       options={options}
       >
+      <link rel="icon" href="/favicon.ico" />
       </GoogleMap>
 
     </MainLayout>
