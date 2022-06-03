@@ -14,7 +14,7 @@ import Exp from "../public/data/caros.json";
 import Mor from "../public/data/victimas.json";
 
 
-import MStyles from "./MStyles";
+import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
   width: "100vw",
   height: "100vh",
