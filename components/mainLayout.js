@@ -48,7 +48,7 @@ const MainLayout = ({ children, pageId }) => {
                 className={pageId === "main" ? "currentPage" : ""}
                 variant="outline"
               >
-                Mapa Terremotos
+              Terremotos Registrados
               </Button>
             </Link>
             <Link href="/tabla">
@@ -64,7 +64,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMag" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Mayor Magnitud registrados
+                            Mayor Magnitud de toda la historia
                           </Button>
                       </Link>
                       <Link href="/mapMor">
@@ -72,7 +72,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMor" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Mas mortales registrados
+                            Mas mortales de toda la historia
                           </Button>
                       </Link>
                       <Link href="/mapExp">
@@ -80,7 +80,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapExp" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Mayor impacto economico registrados
+                            Mayor impacto economico de toda la historia
                           </Button>
                       </Link>
           </DrawerBody>
