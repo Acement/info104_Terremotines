@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import{
   GoogleMap,
   useLoadScript,
+  icon,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
@@ -12,7 +13,7 @@ import{
 import Mag from "../public/data/magnitud.json";
 import MStyles from "../public/data/MStyles";
 const mapContainerStyle ={
-  width: "100vw",
+  width: "98vw",
   height: "100vh",
 
 };
@@ -23,7 +24,7 @@ const centro ={
 };
 const options={
   styles: MStyles,
-  disableDefaultUI: true,
+  disableDefaultUI: false,
 };
 
 export default function main() {

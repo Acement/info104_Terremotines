@@ -5,15 +5,10 @@ import React, { useState } from "react";
 import {
   Button,
   Input,
-  Box,
-  ButtonGroup,
   FormLabel,
-  Select,
-  option,
   useDisclosure,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -35,7 +30,7 @@ const MainLayout = ({ children, pageId }) => {
         </Button>
       <main>{children}</main>
       <Drawer
-        size={"md"}
+        size={"lg"}
         isOpen={isOpen}
         placement="left"
         onClose={onClose}
@@ -69,7 +64,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMag" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos de Mayor Magnitud registrados de toda la historia
+                            Mayor Magnitud registrados
                           </Button>
                       </Link>
                       <Link href="/mapMor">
@@ -77,7 +72,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMor" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos mas mortales registrados de toda la historia
+                            Mas mortales registrados
                           </Button>
                       </Link>
                       <Link href="/mapExp">
@@ -85,7 +80,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapExp" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos con el mayor impacto economico registrados de toda la historia
+                            Mayor impacto economico registrados
                           </Button>
                       </Link>
           </DrawerBody>

@@ -20,7 +20,7 @@ const centro ={
 };
 const options={
   styles: MStyles,
-  disableDefaultUI: true,
+  disableDefaultUI: false,
 };
 
 /* Funcion que crea el mapa */
