@@ -30,7 +30,7 @@ const MainLayout = ({ children, pageId }) => {
         </Button>
       <main>{children}</main>
       <Drawer
-        size={"lg"}
+        size={"md"}
         isOpen={isOpen}
         placement="left"
         onClose={onClose}
