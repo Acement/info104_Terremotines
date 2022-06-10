@@ -35,7 +35,7 @@ export default function main() {
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
 
-
+/* return que muestra el mapa con los punteros respectivos */
   return (
     <MainLayout pageId="main">
       <GoogleMap 

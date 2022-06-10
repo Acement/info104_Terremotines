@@ -1,4 +1,4 @@
-
+/*Pagina que contiene el mapa con los markers de los terremotos con mayor impacto economico */
 
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
@@ -37,7 +37,7 @@ export default function main() {
   if (loadError) return "error al cargar mapa";
   if (!isLoaded) return  "Cargando el mapa";
 
-
+/* return que muestra el mapa con los punteros respectivos */
   return (
     <MainLayout pageId="main">
       <GoogleMap 

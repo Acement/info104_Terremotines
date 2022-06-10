@@ -1,11 +1,11 @@
-
+/* Codigo de la pagina que contiene las tablas comparativas */
 import MainLayout from "../components/mainLayout";
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Mag from "../public/data/magnitud.json";
 import Exp from "../public/data/caros.json";
 import Mor from "../public/data/victimas.json";
-
+/* variable temporal que contiene la información de las tablas */
 const data = [
   {
     name: 'Terremoto de Shaanxi(China)',
@@ -59,6 +59,7 @@ const data = [
   },
 ];
 
+/* Función que crea la tabla con sus caracteristicas */
 export default function tabla() {
 
   return (
