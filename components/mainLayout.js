@@ -53,14 +53,14 @@ const MainLayout = ({ children, pageId }) => {
                 className={pageId === "main" ? "currentPage" : ""}
                 variant="outline"
               >
-                Mapa
+                Mapa Terremotos
               </Button>
             </Link>
             <Link href="/tabla">
           <Button
             className={pageId === "tabla" ? "currentPage" : ""}
           >
-            Tablas
+            Tablas comparativas
           </Button>
         </Link>
                 <FormLabel htmlFor='owner'>Seleccione marcadores</FormLabel>
@@ -69,7 +69,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMag" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos de Mayor Magnitud registrados
+                            Terremotos de Mayor Magnitud registrados de toda la historia
                           </Button>
                       </Link>
                       <Link href="/mapMor">
@@ -77,7 +77,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapMor" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos mas mortales registrados
+                            Terremotos mas mortales registrados de toda la historia
                           </Button>
                       </Link>
                       <Link href="/mapExp">
@@ -85,7 +85,7 @@ const MainLayout = ({ children, pageId }) => {
                             className={pageId === "mapExp" ? "currentPage" : ""}
                             variant="outline"
                           >
-                            Terremotos con el mayor impacto economico registrados
+                            Terremotos con el mayor impacto economico registrados de toda la historia
                           </Button>
                       </Link>
           </DrawerBody>
