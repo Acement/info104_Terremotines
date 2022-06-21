@@ -7,7 +7,7 @@
         "Datos": {
           "EQ_ID": 960,
           "NAME": "Terremoto de Shaanxi(China)",
-          "INFO":"Año:1556, Costo:??, Victimas:830000(Estimacion), Magnitud:8.0"
+          "INFO":"Año:1556, Costo:??, Victimas:830000(Estimacion), Magnitud:8.0 ,Placas: Sistema de grietas de Shanxi"
         },
         "geometry": {
           "type": "Point",
@@ -19,7 +19,7 @@
         "Datos": {
           "EQ_ID": 1219,
           "NAME": "Terremoto de Tangshan(China)",
-          "INFO":"Año:1976, Costo:, Victimas:655000(Estimacion), Magnitud:7.6"
+          "INFO":"Año:1976, Costo:, Victimas:655000(Estimacion), Magnitud:7.6 ,Placas: Falla de Tangshan"
         },
         "geometry": {
           "type": "Point",
@@ -43,7 +43,7 @@
         "Datos": {
           "EQ_ID": 9,
           "NAME": "Terremoto de Antioch(Siria)",
-          "INFO":"Año:526, Costo:??, Victimas:250000(Estimacion), Magnitud:7.0"
+          "INFO":"Año:526, Costo:??, Victimas:250000(Estimacion), Magnitud:7.0 ,Placas: Placa Africana y Placa Arabica"
         },
         "geometry": {
           "type": "Point",
@@ -55,7 +55,7 @@
         "Datos": {
           "EQ_ID": 1160,
           "NAME": "Terremoto de Ganja(Azerbaiyan)",
-          "INFO":"Año:1139, Costo:??, Victimas:230000 – 300000(Estimacion), Magnitud:7.7"
+          "INFO":"Año:1139, Costo:??, Victimas:230000 – 300000(Estimacion), Magnitud:7.7 ,Placas: Placa Euroasiática y Placa Arabica"
         },
         "geometry": {
           "type": "Point",
@@ -67,7 +67,7 @@
         "Datos": {
           "EQ_ID": 1693,
           "NAME": "Terremoto Oceano Indico",
-          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1"
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1 ,Placas: Placa índica y Placa de Burma"
         },
         "geometry": {
           "type": "Point",
@@ -79,7 +79,7 @@
         "Datos": {
           "EQ_ID": 1717,
           "NAME": "Terremoto de Aleppo(Siria)",
-          "INFO":"Año:1138, Costo:??, Victimas:230000(Estimacion) , Magnitud:7.1"
+          "INFO":"Año:1138, Costo:??, Victimas:230000(Estimacion) , Magnitud:7.1 ,PLacas: Placa Euroasiática, Placa Arabica y Placa Africana"
         },
         "geometry": {
           "type": "Point",
@@ -91,7 +91,7 @@
         "Datos": {
           "EQ_ID": 137,
           "NAME": "Terremoto de Haiti",
-          "INFO":"Año:2010, Costo:$7.8 – 8.5 billones, Victimas:100000 – 316000(Estimacion), Magnitud:7.0"
+          "INFO":"Año:2010, Costo:$7.8 – 8.5 billones, Victimas:100000 – 316000(Estimacion), Magnitud:7.0 ,PLacas: Placa del Caribe y  Placa Norteamericana"
         },
         "geometry": {
           "type": "Point",
@@ -103,7 +103,7 @@
         "Datos": {
           "EQ_ID": 1133,
           "NAME": "Terremoto de Hongdong(China)",
-          "INFO":"Año:1303, Costo:??, Victimas:200000(Estimacion), Magnitud:8.0"
+          "INFO":"Año:1303, Costo:??, Victimas:200000(Estimacion), Magnitud:8.0 ,Placas: Falla de Taigu "
         },
         "geometry": {
           "type": "Point",
@@ -115,7 +115,7 @@
         "Datos": {
           "EQ_ID": 657,
           "NAME": "Terremoto de Damghan(Iran)",
-          "INFO":"Año:856, Costo:??, Victimas:200000(Estimacion), Magnitud:7.9"
+          "INFO":"Año:856, Costo:??, Victimas:200000(Estimacion), Magnitud:7.9 ,Placas: Placa Euroasiática y Placa Arabica"
   
         },
         "geometry": {

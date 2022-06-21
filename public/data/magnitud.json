@@ -7,7 +7,7 @@
       "Datos": {
         "EQ_ID": 960,
         "NAME": "Terremoto de Valdivia(Chile)",
-        "INFO":"Año:1960, Costo:??, Victimas:1,000 – 6,000, Magnitud:9.4–9.6"
+        "INFO":"Año:1960, Costo:??, Victimas:1,000 – 6,000, Magnitud:9.4–9.6 ,Placas: Placa de Nazca y Placa Sudamericana"
       },
       "geometry": {
         "type": "Point",
@@ -19,7 +19,7 @@
       "Datos": {
         "EQ_ID": 1219,
         "NAME": "Islas Aleutianas(Estados Unidos)",
-        "INFO":"Año:1585,Costo: ??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.25"
+        "INFO":"Año:1585,Costo: ??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.25 ,Placas: Placa del Pacífico y Placa Norteamericana"
       },
       "geometry": {
         "type": "Point",
@@ -31,7 +31,7 @@
       "Datos": {
         "EQ_ID": 1157,
         "NAME": "Terremoto de Valparaíso(Chile)",
-        "INFO":"Año:1730, Costo: ??, Victimas: ??, Magnitud:9.1 – 9.3"
+        "INFO":"Año:1730, Costo: ??, Victimas: ??, Magnitud:9.1 – 9.3 ,Placas: Placa de Nazca y Placa Sudamericana"
       },
       "geometry": {
         "type": "Point",
@@ -43,7 +43,7 @@
       "Datos": {
         "EQ_ID": 9,
         "NAME": "Terremoto de Alaska(Estados Unidos)",
-        "INFO":"Año:1964 ,Costo:$311 millones,Victimas: 131, Magnitud:9.2"
+        "INFO":"Año:1964 ,Costo:$311 millones,Victimas: 131, Magnitud:9.2 ,Placas: Placa del Pacífico y Placa Norteamericana"
       },
       "geometry": {
         "type": "Point",
@@ -55,7 +55,7 @@
       "Datos": {
         "EQ_ID": 1160,
         "NAME": "Terremoto Oceano Indico",
-        "INFO":"Año:2004, Costo:$31 billones ,Victimas: 227,898,Magnitud: 9.1"
+        "INFO":"Año:2004, Costo:$31 billones ,Victimas: 227,898,Magnitud: 9.1 ,Placas: Placa índica y Placa de Burma"
       },
       "geometry": {
         "type": "Point",
@@ -67,7 +67,7 @@
       "Datos": {
         "EQ_ID": 1693,
         "NAME": "Terremoto de Kamchatka(Rusia)",
-        "INFO":"Año:1737, Costo:??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.0 – 9.3"
+        "INFO":"Año:1737, Costo:??, Victimas: Nativos(Cantidad desconocida), Magnitud:9.0 – 9.3 ,Placas: Fosa de las Kuriles "
       },
       "geometry": {
         "type": "Point",
@@ -79,7 +79,7 @@
       "Datos": {
         "EQ_ID": 1717,
         "NAME": "Terremoto de Valdivia(Chile)",
-        "INFO":"Año:1837, Costo:?? , Victimas:12, Magnitud:8.8 – 9.5"
+        "INFO":"Año:1837, Costo:?? , Victimas:12, Magnitud:8.8 – 9.5 ,Placas: Placa de Nazca y Placa Sudamericana"
       },
       "geometry": {
         "type": "Point",
@@ -91,7 +91,7 @@
       "Datos": {
         "EQ_ID": 137,
         "NAME": "Terremoto de Tōhoku(Japón)",
-        "INFO":"Año:2011 ,Costo:$423.7 billones ;Victimas:19747 ,Magnitud:9.1"
+        "INFO":"Año:2011 ,Costo:$423.7 billones ;Victimas:19747 ,Magnitud:9.1 ,Placas: Placa del Pacífico"
       },
       "geometry": {
         "type": "Point",
@@ -103,7 +103,7 @@
       "Datos": {
         "EQ_ID": 1133,
         "NAME": "Terremoto de Sumatra",
-        "INFO":"Año:1833, Costo:??, Victimas:?? ,Magnitud:8.8 – 9.2"
+        "INFO":"Año:1833, Costo:??, Victimas:?? ,Magnitud:8.8 – 9.2 Placas: Placa Indoaustraliana y Placa Euroasiática"
       },
       "geometry": {
         "type": "Point",
@@ -115,7 +115,7 @@
       "Datos": {
         "EQ_ID": 657,
         "NAME": "Terremoto de Kamchatka(Rusia)",
-        "INFO":"Año:1841, Costo:??, Victimas:??, Magnitud:9.0"
+        "INFO":"Año:1841, Costo:??, Victimas:??, Magnitud:9.0 ,Placas: Placa del Pacífico y Placa de Ojotsk"
 
       },
       "geometry": {
