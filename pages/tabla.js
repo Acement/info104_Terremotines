@@ -6,7 +6,7 @@ import Mag from "../public/data/magnitud.json";
 import Exp from "../public/data/caros.json";
 import Mor from "../public/data/victimas.json";
 /* variable temporal que contiene la información de las tablas */
-const data = [
+const data1 = [
   {
     name: 'Terremoto de Shaanxi(China)',
     victimas: 830000,
@@ -68,7 +68,7 @@ export default function tabla() {
         <LineChart
           width={300}
           height={200}
-          data={data}
+          data={data1}
           margin={{
             top: 5,
             right: 30,

@@ -1,4 +1,4 @@
-const data = [
+const data1 = [
   {
     name: 'Terremoto de Shaanxi(China)',
     victimas: 830000,

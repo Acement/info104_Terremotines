@@ -1,0 +1,52 @@
+const data2 = [
+  {
+    name: 'Terremoto de Tōhoku(Japón)',
+    costo: 423.7,
+    magnitud: 9.1,
+  },
+  {
+    name: 'Terremoto de Gran Hanshin(Japón)',
+    costo: 344.7,
+    magnitud: 6.9,
+  },
+  {
+    name: 'Terremoto de Sichuan(China)',
+    costo: 179.7,
+    magnitud: 8.0,
+  },
+  {
+    name: 'Terremoto de Northridge(Estados Unidos)',
+    costo 88.2,
+    magnitud: 6.7,
+  },
+  {
+    name: 'Terremoto de Christchurch(Nueva Zelanda)',
+    costo: 47.5,
+    magnitud: 6.3,
+  },
+  {
+    name: 'Terremoto de Chile (Costa)',
+    costo: 36,
+    magnitud: 8.8,
+  },  
+  {
+    name: 'Terremoto Oceano Indico',
+    costo: 31,
+    magnitud: 9.1,
+  },
+  {
+    name: 'Terremoto de Chūetsu(Japón)',
+    costo: 31,
+    magnitud: 7.9,
+  },
+  {
+    name: 'Terremoto de L’Aquila(Italia)',
+    costo: 19,
+    magnitud: 5.8,
+  },
+  {
+    name: 'Terremoto en el Norte de Italia',
+    costo: 18.1,
+    magnitud: 6.1,
+  },
+];
