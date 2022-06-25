@@ -83,17 +83,6 @@ export default function tabla1() {
           <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="victimas" stroke="#82ca9d" />
         </LineChart>
-      </ResponsiveContainer>
-
-
-    </MainLayout>
-  );
-}
-export default function tabla2() {
-
-  return (
-    <MainLayout pageId="tabla2">
-            <ResponsiveContainer width="100%" aspect={3}>
         <LineChart
           width={300}
           height={200}
