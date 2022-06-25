@@ -2,9 +2,8 @@
 import MainLayout from "../components/mainLayout";
 import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import Mag from "../public/data/magnitud.json";
-import Exp from "../public/data/caros.json";
-import Mor from "../public/data/victimas.json";
+import Exp from "../public/data/dataCaro.json";
+import Mor from "../public/data/dataVic.json";
 /* variable temporal que contiene la información de las tablas */
 const data1 = [
   {
@@ -60,15 +59,15 @@ const data1 = [
 ];
 
 /* Función que crea la tabla con sus caracteristicas */
-export default function tabla() {
+export default function tabla1() {
 
   return (
-    <MainLayout pageId="tabla">
+    <MainLayout pageId="tabla1">
             <ResponsiveContainer width="100%" aspect={3}>
         <LineChart
           width={300}
           height={200}
-          data={data1}
+          data={Mor}
           margin={{
             top: 5,
             right: 30,
@@ -83,6 +82,36 @@ export default function tabla() {
           <Legend />
           <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="victimas" stroke="#82ca9d" />
+        </LineChart>
+      </ResponsiveContainer>
+
+
+    </MainLayout>
+  );
+}
+export default function tabla2() {
+
+  return (
+    <MainLayout pageId="tabla2">
+            <ResponsiveContainer width="100%" aspect={3}>
+        <LineChart
+          width={300}
+          height={200}
+          data={Exp}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="costo" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
 
