@@ -51,11 +51,11 @@ const MainLayout = ({ children, pageId }) => {
               Terremotos Registrados
               </Button>
             </Link>
-            <Link href="/tabla">
+            <Link href="/graficos">
           <Button
-            className={pageId === "tabla" ? "currentPage" : ""}
+            className={pageId === "graficos" ? "currentPage" : ""}
           >
-            Tablas comparativas
+            Graficas comparativas
           </Button>
         </Link>
                 <FormLabel htmlFor='owner'>Seleccione marcadores</FormLabel>
