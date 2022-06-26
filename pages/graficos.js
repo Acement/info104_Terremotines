@@ -80,8 +80,8 @@ export default function tabla1() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="victimas" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="Magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Victimas" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
       
@@ -102,8 +102,8 @@ export default function tabla1() {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="costo" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="Magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
+          <Line type="monotone" dataKey="Costo(En Billones)" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
 
