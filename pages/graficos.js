@@ -89,7 +89,7 @@ export default function tabla1() {
         <LineChart
           width={300}
           height={200}
-          data={data1}
+          data={Exp}
           margin={{
             top: 5,
             right: 30,
@@ -103,7 +103,7 @@ export default function tabla1() {
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="magnitud" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" dataKey="victimas" stroke="#82ca9d" />
+          <Line type="monotone" dataKey="costo" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
 
