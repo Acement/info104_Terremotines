@@ -11,7 +11,9 @@ import{
 } from "@react-google-maps/api";
 
 import Mag from "../public/data/magnitud.json";
+
 import MStyles from "../public/data/MStyles";
+import { Button } from "@chakra-ui/react";
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -51,7 +53,12 @@ export default function main() {
                                 lng:EqMag.geometry.coordinates[1]}}
                       onClick={()=>
                           {setSelectedMarker(EqMag);
-                      }}/>
+                      }}
+                      icon={{
+                        url: "../data/magnitud.svg",
+                        scaledSize:new window.google.maps.Size(25,25)
+                      }}
+                      />
           
           ))}
           {SelectedMarker &&<InfoWindow 
@@ -59,14 +66,17 @@ export default function main() {
               lat:SelectedMarker.geometry.coordinates[0],
               lng:SelectedMarker.geometry.coordinates[1]
               }}
-              onClick= {()=>{
+              onCloseClick= {()=>{
                 setSelectedMarker(null);
               }}
+              
               >
             <div>
               <b>{SelectedMarker.Datos.NAME}</b>
               <p>{SelectedMarker.Datos.INFO}</p>
+
             </div>
+            
           </InfoWindow>
            }
       </GoogleMap>

@@ -59,6 +59,14 @@ const MainLayout = ({ children, pageId }) => {
           </Button>
         </Link>
                 <FormLabel htmlFor='owner'>Seleccione marcadores</FormLabel>
+                <Link href="/mapAll">
+                          <Button
+                            className={pageId === "mapAll" ? "currentPage" : ""}
+                            variant="outline"
+                          >
+                            Todos los marcadores
+                          </Button>
+                      </Link>
                       <Link href="/mapMag">
                           <Button
                             className={pageId === "mapMag" ? "currentPage" : ""}
