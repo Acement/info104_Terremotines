@@ -10,11 +10,8 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
-import Mor from "../public/data/victimas.json";
-
+import Mag from "../public/data/magnitud.json";
 import MStyles from "../public/data/MStyles";
-import { Button } from "@chakra-ui/react";
-
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -48,20 +45,19 @@ export default function main() {
       center={centro}
       options={options}
       >
-          {Mor.Terremotos.map((EqMor)=>(
-              <Marker key={EqMor.Datos.EQ_ID} 
-                      position={{lat:EqMor.geometry.coordinates[0],
-                                lng:EqMor.geometry.coordinates[1]}} 
+      {Mag.Terremotos.map((EqMag)=>(
+              <Marker key={EqMag.Datos.EQ_ID} 
+                      position={{lat:EqMag.geometry.coordinates[0],
+                                lng:EqMag.geometry.coordinates[1]}}
                       onClick={()=>
-                          {setSelectedMarker(EqMor);
-                          
+                          {setSelectedMarker(EqMag);
                       }}
                       icon={{
-                        url: "../data/mortalidad.svg",
+                        url: "../data/pulse.svg",
                         scaledSize:new window.google.maps.Size(25,25)
                       }}
-                        />
-
+                      />
+          
           ))}
           {SelectedMarker &&<InfoWindow 
             position={{
@@ -71,6 +67,7 @@ export default function main() {
               onCloseClick= {()=>{
                 setSelectedMarker(null);
               }}
+              
               >
             <div>
               <b>{SelectedMarker.Datos.NAME}</b>

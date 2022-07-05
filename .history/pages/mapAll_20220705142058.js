@@ -10,10 +10,27 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
+import usePlacesAutocomplete, {
+    getGeocode,
+    getLatLng,
+} from "use-places-autocomplete";
+
+import {
+    Combobox,
+    ComboboxInput,
+    ComboboxPopover,
+    ComboboxList,
+    ComboboxOption,
+}from "@reach/combobox";
+import "@reach/combobox/styles.css";
+
 import Exp from "../public/data/caros.json";
+import Mag from "../public/data/magnitud.json";
+import Mor from "../public/data/victimas.json";
 
 import MStyles from "../public/data/MStyles";
 import { Button } from "@chakra-ui/react";
+
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -40,7 +57,10 @@ export default function main() {
 
 /* return que muestra el mapa con los punteros respectivos */
   return (
+    <div>
     <MainLayout pageId="main">
+
+      <Search />
       <GoogleMap 
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}
@@ -61,7 +81,34 @@ export default function main() {
                         />
 
           ))}
+          {Mag.Terremotos.map((EqMag)=>(
+              <Marker key={EqMag.Datos.EQ_ID} 
+                      position={{lat:EqMag.geometry.coordinates[0],
+                                lng:EqMag.geometry.coordinates[1]}}
+                      onClick={()=>
+                          {setSelectedMarker(EqMag);
+                      }}
+                      icon={{
+                        url: "../data/magnitud.svg",
+                        scaledSize:new window.google.maps.Size(25,25)
+                      }}
+                      />
           
+          ))}
+          {Mor.Terremotos.map((EqMor)=>(
+              <Marker key={EqMor.Datos.EQ_ID} 
+                      position={{lat:EqMor.geometry.coordinates[0],
+                                lng:EqMor.geometry.coordinates[1]}} 
+                      onClick={()=>
+                          {setSelectedMarker(EqMor);
+                          
+                      }}
+                      icon={{
+                        url: "../data/mortalidad.svg",
+                      }}
+                        />
+
+          ))}          
           {SelectedMarker &&<InfoWindow 
             position={{
               lat:SelectedMarker.geometry.coordinates[0],
@@ -80,5 +127,39 @@ export default function main() {
       </GoogleMap>
 
     </MainLayout>
+    </div>
   );
+
+}
+
+function Search(){
+    const{ready,valor,suggestions: {status,data}, setValue, clearSuggestions}= usePlacesAutocomplete({
+        requestOptions:{
+            location:{lat:()=>Exp.geometry.coordinates[0], lng: ()=>Exp.geometry.coordinates[1]},
+            radius: 200 * 1000,
+
+
+        },
+    });
+
+    return ( 
+     <div> 
+        <Combobox 
+            onSelect={(direccion)=> {
+
+            console.log(direccion);
+            }}
+            >
+            <ComboboxInput 
+                valor={valor} 
+                onChange={(event)=> {
+                    setValue(event.target.valor);
+                }}
+                disabled={!ready}
+                placeholder= "Buscar terremoto"
+            />
+
+        </Combobox>
+    </div>  
+    );
 }

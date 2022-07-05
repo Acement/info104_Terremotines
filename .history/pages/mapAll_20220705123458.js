@@ -1,4 +1,4 @@
-
+/*Pagina que contiene el mapa con los markers de los terremotos con mayor impacto economico */
 
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
@@ -10,11 +10,11 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
+import Exp from "../public/data/caros.json";
+import Mag from "../public/data/magnitud.json";
 import Mor from "../public/data/victimas.json";
 
 import MStyles from "../public/data/MStyles";
-import { Button } from "@chakra-ui/react";
-
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -48,6 +48,32 @@ export default function main() {
       center={centro}
       options={options}
       >
+          {Exp.Terremotos.map((EqExp)=>(
+              <Marker key={EqExp.Datos.EQ_ID} 
+                      position={{lat:EqExp.geometry.coordinates[0],
+                                lng:EqExp.geometry.coordinates[1]}} 
+                      onClick={()=>
+                          {setSelectedMarker(EqExp);
+                      }}
+                      icon={{
+                        url: "money.svg"
+                      }}
+                        />
+
+          ))}
+          {Mag.Terremotos.map((EqMag)=>(
+              <Marker key={EqMag.Datos.EQ_ID} 
+                      position={{lat:EqMag.geometry.coordinates[0],
+                                lng:EqMag.geometry.coordinates[1]}}
+                      onClick={()=>
+                          {setSelectedMarker(EqMag);
+                      }}
+                      icon={{
+                        url: "pulse.svg"
+                      }}
+                      />
+          
+          ))}
           {Mor.Terremotos.map((EqMor)=>(
               <Marker key={EqMor.Datos.EQ_ID} 
                       position={{lat:EqMor.geometry.coordinates[0],
@@ -57,18 +83,17 @@ export default function main() {
                           
                       }}
                       icon={{
-                        url: "../data/mortalidad.svg",
-                        scaledSize:new window.google.maps.Size(25,25)
+                        url: "death.svg"
                       }}
                         />
 
-          ))}
+          ))}          
           {SelectedMarker &&<InfoWindow 
             position={{
               lat:SelectedMarker.geometry.coordinates[0],
               lng:SelectedMarker.geometry.coordinates[1]
               }}
-              onCloseClick= {()=>{
+              onClick= {()=>{
                 setSelectedMarker(null);
               }}
               >

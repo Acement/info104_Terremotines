@@ -13,8 +13,6 @@ import{
 import Mor from "../public/data/victimas.json";
 
 import MStyles from "../public/data/MStyles";
-import { Button } from "@chakra-ui/react";
-
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -57,7 +55,7 @@ export default function main() {
                           
                       }}
                       icon={{
-                        url: "../data/mortalidad.svg",
+                        url: "mortalidad.svg",
                         scaledSize:new window.google.maps.Size(25,25)
                       }}
                         />
