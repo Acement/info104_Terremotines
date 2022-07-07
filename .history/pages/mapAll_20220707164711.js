@@ -29,7 +29,6 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
-  streetViewControl: false,
 };
 
 export default function main() {
@@ -94,25 +93,25 @@ export default function main() {
           {SelMarkers &&<InfoWindow 
             position={{
               lat:SelMarkers.geometry.coordinates[0],
-              lng:SelMarkers.geometry.coordinates[1]}}
-            onCloseClick= {()=>{setSelMarkers(null);}}
+              lng:SelMarkers.geometry.coordinates[1]
+              }}
+              onCloseClick= {()=>{
+                setSelMarkers(null);
+              }}
               >
             <div>
               <img className="photo"
-                src={SelMarkers.Datos.IMAGE}
-                alt="new"
+              src={SelMarkers.Datos.IMAGE}
+              alt="new"
               />
               <b>{SelMarkers.Datos.NAME}</b>
               <p>{SelMarkers.Datos.INFO}</p>
-              <Button colorScheme='blue' variant='link' size='sm' > 
-                  <a href={SelMarkers.Datos.LINK} rel="none" target="_blank"> 
-                        <b>más información</b>
-                  </a> 
-              </Button> 
+             <Button colorScheme='blue' variant='link' size='sm' > <a href={SelMarkers.Datos.LINK} rel="none" target="_blank"> <b>más información</b></a> </Button> 
             </div>
           </InfoWindow>
            }
       </GoogleMap>
+
     </MainLayout>
   );
 

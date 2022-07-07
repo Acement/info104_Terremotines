@@ -29,7 +29,6 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
-  streetViewControl: false,
 };
 
 export default function main() {

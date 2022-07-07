@@ -10,10 +10,11 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
-import Mag from "../public/data/magnitud.json";
-
+import Mor from "../public/data/victimas.json";
+import { StreetViewPanorama } from '@react-google-maps/api';
 import MStyles from "../public/data/MStyles";
 import { Button } from "@chakra-ui/react";
+
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -27,7 +28,6 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
-  streetViewControl: false,
 };
 
 export default function main() {
@@ -48,19 +48,20 @@ export default function main() {
       center={centro}
       options={options}
       >
-      {Mag.Terremotos.map((EqMag)=>(
-              <Marker key={EqMag.Datos.EQ_ID} 
-                      position={{lat:EqMag.geometry.coordinates[0],
-                                lng:EqMag.geometry.coordinates[1]}}
+          {Mor.Terremotos.map((EqMor)=>(
+              <Marker key={EqMor.Datos.EQ_ID} 
+                      position={{lat:EqMor.geometry.coordinates[0],
+                                lng:EqMor.geometry.coordinates[1]}} 
                       onClick={()=>
-                          {setSelMarkers(EqMag);
+                          {setSelMarkers(EqMor);
+                          
                       }}
                       icon={{
-                        url: "../data/magnitud.svg",
+                        url: "../data/mortalidad.svg",
                         scaledSize:new window.google.maps.Size(25,25)
                       }}
-                      />
-          
+                        />
+
           ))}
           {SelMarkers &&<InfoWindow 
             position={{
@@ -70,7 +71,6 @@ export default function main() {
               onCloseClick= {()=>{
                 setSelMarkers(null);
               }}
-              
               >
             <div>
               <img className="photo"
@@ -81,7 +81,6 @@ export default function main() {
               <p>{SelMarkers.Datos.INFO}</p>
               <Button colorScheme='blue' variant='link' size='sm' > <a href={SelMarkers.Datos.LINK} rel="none" target="_blank"> <b>más información</b></a> </Button> 
             </div>
-            
           </InfoWindow>
            }
       </GoogleMap>

@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import{
   GoogleMap,
   useLoadScript,
+  icon,
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
@@ -29,15 +30,17 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
-  streetViewControl: false,
 };
 
 export default function main() {
-    const [SelMarkers,setSelMarkers]= useState(null);
-    const {isLoaded, loadError } = useLoadScript({googleMapsApiKey: process.env.NEXT_PUBLIC_MY_API_KEY, libraries,});
+    const [SelectedMarker,setSelectedMarker]= useState(null);
+    const {isLoaded, loadError } = useLoadScript({
+      googleMapsApiKey: process.env.NEXT_PUBLIC_MY_API_KEY,
+      libraries,
+    });
     if (loadError) return "error al cargar mapa";
     if (!isLoaded) return  "Cargando el mapa";
-    
+
 /* return que muestra el mapa con los punteros respectivos */
   return (
     <MainLayout pageId="main">
@@ -54,7 +57,7 @@ export default function main() {
                       position={{lat:EqExp.geometry.coordinates[0],
                                 lng:EqExp.geometry.coordinates[1]}} 
                       onClick={()=>
-                          {setSelMarkers(EqExp);
+                          {setSelectedMarker(EqExp);
                       }}
                       icon={{
                         url: "../data/moneda.svg",
@@ -68,7 +71,7 @@ export default function main() {
                       position={{lat:EqMag.geometry.coordinates[0],
                                 lng:EqMag.geometry.coordinates[1]}}
                       onClick={()=>
-                          {setSelMarkers(EqMag);
+                          {setSelectedMarker(EqMag);
                           
                       }}
                       icon={{
@@ -83,7 +86,7 @@ export default function main() {
                       position={{lat:EqMor.geometry.coordinates[0],
                                 lng:EqMor.geometry.coordinates[1]}} 
                       onClick={(e)=>
-                          {setSelMarkers(EqMor);
+                          {setSelectedMarker(EqMor);
                       }}
                       icon={{
                         url: "../data/mortalidad.svg",
@@ -91,28 +94,28 @@ export default function main() {
                         />
 
           ))}          
-          {SelMarkers &&<InfoWindow 
+          {SelectedMarker &&<InfoWindow 
             position={{
-              lat:SelMarkers.geometry.coordinates[0],
-              lng:SelMarkers.geometry.coordinates[1]}}
-            onCloseClick= {()=>{setSelMarkers(null);}}
+              lat:SelectedMarker.geometry.coordinates[0],
+              lng:SelectedMarker.geometry.coordinates[1]
+              }}
+              onCloseClick= {()=>{
+                setSelectedMarker(null);
+              }}
               >
             <div>
               <img className="photo"
-                src={SelMarkers.Datos.IMAGE}
-                alt="new"
+              src={SelectedMarker.Datos.IMAGE}
+              alt="new"
               />
-              <b>{SelMarkers.Datos.NAME}</b>
-              <p>{SelMarkers.Datos.INFO}</p>
-              <Button colorScheme='blue' variant='link' size='sm' > 
-                  <a href={SelMarkers.Datos.LINK} rel="none" target="_blank"> 
-                        <b>más información</b>
-                  </a> 
-              </Button> 
+              <b>{SelectedMarker.Datos.NAME}</b>
+              <p>{SelectedMarker.Datos.INFO}</p>
+             <Button colorScheme='blue' variant='link' size='sm' > <a href={SelectedMarker.Datos.LINK} rel="none" target="_blank"> <b>más información</b></a> </Button> 
             </div>
           </InfoWindow>
            }
       </GoogleMap>
+
     </MainLayout>
   );
 

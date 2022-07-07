@@ -1,4 +1,4 @@
-
+/*Pagina que contiene el mapa con los markers de los terremotos con mayor impacto economico */
 
 import MainLayout from "../components/mainLayout";
 import React, { useState } from "react";
@@ -10,8 +10,8 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
-import Mag from "../public/data/magnitud.json";
-
+import Exp from "../public/data/caros.json";
+import { StreetViewPanorama } from '@react-google-maps/api';
 import MStyles from "../public/data/MStyles";
 import { Button } from "@chakra-ui/react";
 const mapContainerStyle ={
@@ -27,7 +27,6 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
-  streetViewControl: false,
 };
 
 export default function main() {
@@ -48,20 +47,21 @@ export default function main() {
       center={centro}
       options={options}
       >
-      {Mag.Terremotos.map((EqMag)=>(
-              <Marker key={EqMag.Datos.EQ_ID} 
-                      position={{lat:EqMag.geometry.coordinates[0],
-                                lng:EqMag.geometry.coordinates[1]}}
+          {Exp.Terremotos.map((EqExp)=>(
+              <Marker key={EqExp.Datos.EQ_ID} 
+                      position={{lat:EqExp.geometry.coordinates[0],
+                                lng:EqExp.geometry.coordinates[1]}} 
                       onClick={()=>
-                          {setSelMarkers(EqMag);
+                          {setSelMarkers(EqExp);
                       }}
                       icon={{
-                        url: "../data/magnitud.svg",
+                        url: "../data/moneda.svg",
                         scaledSize:new window.google.maps.Size(25,25)
                       }}
-                      />
-          
+                        />
+
           ))}
+          
           {SelMarkers &&<InfoWindow 
             position={{
               lat:SelMarkers.geometry.coordinates[0],
@@ -70,9 +70,8 @@ export default function main() {
               onCloseClick= {()=>{
                 setSelMarkers(null);
               }}
-              
               >
-            <div>
+             <div>
               <img className="photo"
               src={SelMarkers.Datos.IMAGE}
               alt="new"
@@ -81,7 +80,6 @@ export default function main() {
               <p>{SelMarkers.Datos.INFO}</p>
               <Button colorScheme='blue' variant='link' size='sm' > <a href={SelMarkers.Datos.LINK} rel="none" target="_blank"> <b>más información</b></a> </Button> 
             </div>
-            
           </InfoWindow>
            }
       </GoogleMap>
