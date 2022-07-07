@@ -8,7 +8,7 @@
           "EQ_ID": 960,
           "NAME": "Terremoto de Shaanxi(China)",
           "INFO":"Año:1556, Costo:??, Victimas:830000(Estimacion), Magnitud:8.0 ,Placas: Sistema de grietas de Shanxi",
-          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Shaanxi_de_1556",
+          "LINK": "href= 'https://es.wikipedia.org/wiki/Terremoto_de_Shaanxi_de_1556'",
           "IMAGE":"https://www.efemeridespedrobeltran.com/es/imagenes/saanxi.jpg"
           
         },

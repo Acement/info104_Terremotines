@@ -140,10 +140,8 @@ code {
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 .photo {
-  height: 50%;
-  width: 50%;
-  padding: auto;
-  right: 50%;
+  height: 100px;
+  width: 100px; 
 }
 
 .grid {

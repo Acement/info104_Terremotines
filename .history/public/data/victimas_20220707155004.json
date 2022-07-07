@@ -23,7 +23,7 @@
           "EQ_ID": 1219,
           "NAME": "Terremoto de Tangshan(China)",
           "INFO":"Año:1976, Costo:, Victimas:655000(Estimacion), Magnitud:7.6 ,Placas: Falla de Tangshan",
-          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Tangshan_de_1976",
+          "LINK": "href= 'https://es.wikipedia.org/wiki/Terremoto_de_Tangshan_de_1976'",
           "IMAGE":"https://www.thoughtco.com/thmb/SpygEbNciMIt3dMBS6Mb2Jz_wV4=/735x0/TangshanfromHebeiProvincialSeismoBureauviaUSGS-56a040283df78cafdaa0ad98.jpg"
         },
         "geometry": {

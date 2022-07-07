@@ -141,9 +141,7 @@ code {
 }
 .photo {
   height: 50%;
-  width: 50%;
-  padding: auto;
-  right: 50%;
+  width: 50%; 
 }
 
 .grid {

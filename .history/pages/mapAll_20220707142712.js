@@ -10,10 +10,20 @@ import{
   InfoWindow,
 } from "@react-google-maps/api";
 
+import usePlacesAutocomplete, {
+    getGeocode,
+    getLatLng,
+} from "use-places-autocomplete";
+
+import { StandaloneSearchBox } from '@react-google-maps/api';
+
 import Exp from "../public/data/caros.json";
+import Mag from "../public/data/magnitud.json";
+import Mor from "../public/data/victimas.json";
 
 import MStyles from "../public/data/MStyles";
-import { Button } from "@chakra-ui/react";
+import { Button, position } from "@chakra-ui/react";
+
 const mapContainerStyle ={
   width: "98vw",
   height: "100vh",
@@ -27,6 +37,17 @@ const centro ={
 const options={
   styles: MStyles,
   disableDefaultUI: false,
+  strokeColor: '#FF0000',
+  strokeOpacity: 0.8,
+  strokeWeight: 2,
+  fillColor: '#FF0000',
+  fillOpacity: 0.35,
+  clickable: false,
+  draggable: false,
+  editable: false,
+  visible: true,
+  radius: 30000,
+  zIndex: 1
 };
 
 export default function main() {
@@ -35,13 +56,25 @@ export default function main() {
       googleMapsApiKey: process.env.NEXT_PUBLIC_MY_API_KEY,
       libraries,
     });
-  if (loadError) return "error al cargar mapa";
-  if (!isLoaded) return  "Cargando el mapa";
+    const onLoad = circle => {
+      console.log('Circle onLoad circle: ', circle)
+    }
+    
+    const onUnmount = circle => {
+      console.log('Circle onUnmount circle: ', circle)
+    }
+
+    if (loadError) return "error al cargar mapa";
+    if (!isLoaded) return  "Cargando el mapa";
 
 /* return que muestra el mapa con los punteros respectivos */
   return (
-    <MainLayout pageId="main">
+    <ScriptLoaded>
+      <MainLayout pageId="main">
+    
+
       <GoogleMap 
+       id="circle-example"
       mapContainerStyle={mapContainerStyle} 
       zoom= {3}
       center={centro}
@@ -61,7 +94,34 @@ export default function main() {
                         />
 
           ))}
+          {Mag.Terremotos.map((EqMag)=>(
+              <Marker key={EqMag.Datos.EQ_ID} 
+                      position={{lat:EqMag.geometry.coordinates[0],
+                                lng:EqMag.geometry.coordinates[1]}}
+                      onClick={()=>
+                          {setSelectedMarker(EqMag);
+                          
+                      }}
+                      icon={{
+                        url: "../data/magnitud.svg",
+                        scaledSize:new window.google.maps.Size(25,25)
+                      }}
+                      />
           
+          ))}
+          {Mor.Terremotos.map((EqMor)=>(
+              <Marker key={EqMor.Datos.EQ_ID} 
+                      position={{lat:EqMor.geometry.coordinates[0],
+                                lng:EqMor.geometry.coordinates[1]}} 
+                      onClick={(e)=>
+                          {setSelectedMarker(EqMor);
+                      }}
+                      icon={{
+                        url: "../data/mortalidad.svg",
+                      }}
+                        />
+
+          ))}          
           {SelectedMarker &&<InfoWindow 
             position={{
               lat:SelectedMarker.geometry.coordinates[0],
@@ -71,19 +131,17 @@ export default function main() {
                 setSelectedMarker(null);
               }}
               >
-             <div>
-              <img className="photo"
-              src={SelectedMarker.Datos.IMAGE}
-              alt="new"
-              />
+            <div>
               <b>{SelectedMarker.Datos.NAME}</b>
               <p>{SelectedMarker.Datos.INFO}</p>
-              <a href={SelectedMarker.Datos.LINK} rel="_blank"> más información</a>
             </div>
           </InfoWindow>
            }
       </GoogleMap>
 
     </MainLayout>
+  </ScriptLoaded>
   );
+
 }
+
