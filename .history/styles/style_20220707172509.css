@@ -139,8 +139,8 @@ code {
   justify-content: center;
   flex-wrap: wrap;
 
-  height: 55%;
-  width: 55%;
+  height: 50%;
+  width: 50%;
   padding: auto;
   right: 50%;
 }
@@ -210,11 +210,12 @@ h1{
 
 
 .gridWindow {
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
-  max-width: 100%;
+  max-width: 800px;
   margin-top: 1rem;
 }

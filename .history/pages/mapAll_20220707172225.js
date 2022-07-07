@@ -92,15 +92,14 @@ export default function main() {
 
           ))}          
           {SelMarkers &&<InfoWindow 
-            
             position={{
               lat:SelMarkers.geometry.coordinates[0],
               lng:SelMarkers.geometry.coordinates[1]}}
             onCloseClick= {()=>{setSelMarkers(null);}}
             
               >
-            <div >
-              <div className="gridWindow">
+            <div>
+              <div className="card">
                 <img className="photo"
                   src={SelMarkers.Datos.IMAGE}
                   alt="new"

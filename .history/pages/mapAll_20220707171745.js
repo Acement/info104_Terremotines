@@ -92,20 +92,17 @@ export default function main() {
 
           ))}          
           {SelMarkers &&<InfoWindow 
-            
             position={{
               lat:SelMarkers.geometry.coordinates[0],
               lng:SelMarkers.geometry.coordinates[1]}}
             onCloseClick= {()=>{setSelMarkers(null);}}
-            
               >
-            <div >
-              <div className="gridWindow">
-                <img className="photo"
-                  src={SelMarkers.Datos.IMAGE}
-                  alt="new"
-                />
-              </div>
+            <div>
+              <div className="grid"><img className="photo"
+                src={SelMarkers.Datos.IMAGE}
+                alt="new"
+              /></div>
+ 
               <b>{SelMarkers.Datos.NAME}</b>
               <p>{SelMarkers.Datos.INFO}</p>
               <Button colorScheme='blue' variant='link' size='sm' > 

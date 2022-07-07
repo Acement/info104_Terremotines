@@ -1,0 +1,149 @@
+{
+    "type": "TerremotoL",
+  
+    "Terremotos": [
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 960,
+          "NAME": "Terremoto de Tōhoku(Japón)",
+          "INFO":"Año:2011 ,Costo:$423.7 billones ;Victimas:19747 ,Magnitud:9.1 ,Placas: Placa del Pacífico",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_y_tsunami_de_Japón_de_2011",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/2/23/2011_Japan_shakemap.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [38.32,147.37]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1219,
+          "NAME": "Terremoto de Gran Hanshin(Japón)",
+          "INFO":"Año:1995 ,Costo:$344.7 billones ;Victimas:5502 -  6434 ,Magnitud:6.9 ,Placas: Placa del Pacífico",
+          "LINK": "https://es.wikipedia.org/wiki/Gran_terremoto_de_Hanshin-Awaji",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Hanshin-Awaji_earthquake_1995_337.jpg/1280px-Hanshin-Awaji_earthquake_1995_337.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates":[34.58,135.03]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1157,
+          "NAME": "Terremoto de Sichuan(China)",
+          "INFO":"Año:2008 ,Costo:$179.7 billones ;Victimas:87587 ,Magnitud:8.0 ,Placas: Placa índica y Placa Euroasiática",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Sichuan_de_2008",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/ADBC_Branch_in_BeiChuan_after_earthquake.jpg/1280px-ADBC_Branch_in_BeiChuan_after_earthquake.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [31.021,103.367]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 9,
+          "NAME": "Terremoto de Northridge(Estados Unidos)",
+          "INFO":"Año: 1994, Costo:$88.2 billones ,Victimas:57 ,Magnitud:6.7 ,Placa: Falla de Northridge",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Northridge_de_1994",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/2/2c/Northridge_earthquake_10_frwy2.png"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [34.21,-118.54]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1160,
+          "NAME": "Terremoto de Christchurch(Nueva Zelanda)",
+          "INFO":"Año:2011 ,Costo:$47.5 billones ,Victimas:185 ,Magnitud:6.3 ,Placa: Falla desconocida",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Christchurch_de_junio_de_2011",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/6/61/13_June_2011_Christchurch_earthquake_damage.png"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-43.583,172.68]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1693,
+          "NAME": "Terremoto Oceano Indico",
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1 ,Placas: Placa índica y Placa de Burma",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_del_océano_Índico_de_2004",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/b/b1/Paises_afectados_por_el_terremoto_del_Oceano_Indico_de_2004.png"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [3.316,95.854]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1717,
+          "NAME": "Terremoto de L’Aquila(Italia)",
+          "INFO":"Año:2009\r ,Costo: $19 billones\r ,Victimas:308 ,Magnitud:5.8 \r ,Placas: Placa Euroasiática y Placa Africana",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_L%27Aquila_de_2009",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/6/64/Emergenza_Terremoto_Abruzzo_2009_-_12.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [42.3476,13.38]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 137,
+          "NAME": "Terremoto en el Norte de Italia",
+          "INFO":"Año: 2012, Costo: $18.1 billones, Victimas: 27, Magnitud:6.1 ,Placa: Falla desconocida",
+          "LINK": "https://es.wikipedia.org/wiki/Terremotos_de_Italia_de_2012",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2012_Northern_Italy_earthquake_004.jpg/800px-2012_Northern_Italy_earthquake_004.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [44.9,11.24]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 1133,
+          "NAME": "Terremoto de Chile (Costa)",
+          "INFO":"Año:2010,Costo:$18 - $36 billones ;Victimas:525 ,Magnitud: 8.8 ,Placas: Placa de Nazca y Placa Sudamericana",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Chile_de_2010",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/4/49/2010_Chile_earthquake_-_Building_destroyed_in_Concepci%C3%B3n.jpg"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-36.29,-73.239]
+        }
+      },
+      {
+        "type": "Terremoto",
+        "Datos": {
+          "EQ_ID": 657,
+          "NAME": "Terremoto de Chūetsu(Japón)",
+          "INFO":"Año:2004 ,Costo:$31 billones ,Victimas: 227898, Magnitud:9.1 ,Placa: Falla desconocida",
+          "LINK": "https://es.wikipedia.org/wiki/Terremoto_de_Chuetsū_de_2004",
+          "IMAGE":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Chuetsu_earthquake-earthquake_liquefaction1.jpg/1280px-Chuetsu_earthquake-earthquake_liquefaction1.jpg"
+  
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [37.3, 138.8]
+
+        }
+      }
+    ]
+  }
+  

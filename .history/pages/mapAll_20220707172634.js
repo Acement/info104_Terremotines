@@ -99,8 +99,8 @@ export default function main() {
             onCloseClick= {()=>{setSelMarkers(null);}}
             
               >
-            <div >
-              <div className="gridWindow">
+            <div className="gridWindow" >
+              <div className="grid">
                 <img className="photo"
                   src={SelMarkers.Datos.IMAGE}
                   alt="new"

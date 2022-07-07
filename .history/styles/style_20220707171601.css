@@ -136,11 +136,8 @@ code {
 .photo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  height: 55%;
-  width: 55%;
+  height: 50%;
+  width: 50%;
   padding: auto;
   right: 50%;
 }
@@ -206,15 +203,4 @@ h1{
   z-index: 10;
   margin: 0;
   padding: 0;
-}
-
-
-.gridWindow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 100%;
-  margin-top: 1rem;
 }

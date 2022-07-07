@@ -139,8 +139,8 @@ code {
   justify-content: center;
   flex-wrap: wrap;
 
-  height: 55%;
-  width: 55%;
+  height: 500px;
+  width: 500px;
   padding: auto;
   right: 50%;
 }
