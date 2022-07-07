@@ -79,7 +79,7 @@ export default function main() {
               />
               <b>{SelectedMarker.Datos.NAME}</b>
               <p>{SelectedMarker.Datos.INFO}</p>
-              <Button colorScheme='blue' variant='link' size='sm' > <a href={SelectedMarker.Datos.LINK} rel="none" target="_blank"> <b>más información</b></a> </Button> 
+              <a href={SelectedMarker.Datos.LINK} rel="none" target="_blank"> más información</a>
             </div>
           </InfoWindow>
            }
